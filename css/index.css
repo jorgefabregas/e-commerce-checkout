@@ -1,3 +1,15 @@
+p {
+    
+}
 .pants {
-    display: block;
+    margin-right: 1em;
+}
+.pants_price {
+    margin-right: 1em;
+}
+.shirts {
+    margin-right: 1em;
+}
+.shirt_price {
+    margin-right: 1em;
 }
