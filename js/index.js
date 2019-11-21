@@ -13,3 +13,10 @@ function add () {
 
 minusBut.addEventListener ("click", minus);
 addBut.addEventListener ("click", add);
+
+let calculPrice = document.getElementById ("calculatorBut");
+
+function calculePrice () {
+    let calcul = document.getElementById ("pants_extendpri");
+    calcul.innerHTML = parseInt (calcul.innerHTML) * pants_price;
+}
