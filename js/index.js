@@ -29,6 +29,3 @@ minus_But.addEventListener ("click", minus_shirt);
 add_But.addEventListener ("click", add_shirt);
 
 
-
-let calculPrice = document.getElementById ("calculatorBut");
-
