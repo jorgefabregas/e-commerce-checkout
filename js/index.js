@@ -28,9 +28,7 @@ addBut.addEventListener ("click", add);
 minus_But.addEventListener ("click", minus_shirt);
 add_But.addEventListener ("click", add_shirt);
 
+
+
 let calculPrice = document.getElementById ("calculatorBut");
 
-function calculePrice () {
-    let calcul = document.getElementById ("pants_price");
-    calcul.innerHTML = parseInt (calcul.innerHTML.value) * pants_price;
-}
