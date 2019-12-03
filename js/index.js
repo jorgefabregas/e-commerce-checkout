@@ -28,9 +28,11 @@ addBut.addEventListener ("click", add);
 minus_But.addEventListener ("click", minus_shirt);
 add_But.addEventListener ("click", add_shirt);
 
-var pricePants = getElementById ('pants_price');
-var qtyPants = getElementById ('pantsQty'.value);
-var extPricePants = parseFloat(2) (getElementById ('pants_extendpri'));
-extPricePants = (qtyPants*qtyPants);
 
-console.log ('hello')
+function updateExtPants() {
+    var pricePants = getElementById ('pants_price');
+    var qtyPants = getElementById ('pantsQty');
+    var pricePantsExt = parseFloat(2)(pricePants.innerText.replace ('$', ''));
+
+}
+console.log (pricePantsExt)

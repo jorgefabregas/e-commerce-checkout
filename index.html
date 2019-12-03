@@ -11,24 +11,24 @@
     <h1>E-commerce Checkout</h1>
     
     <p>Product Quantity Unit Price Extended Price</p>
-    <div>
+    <div id="pants/row">
         <label class="pants">Pants</label>   
         <input type="button" id="pantsMinusBut" value="-">
         <label id="pantsQty" class="qty">0</label>
         <input type="button" id="pantsAddBut" value="+">
     
-        $<label class="pants_price">40.99</label>
-        <imput type=text id="pants_extendpri" value='0'></imput>    
+        <span id="pants_price">$40.99</span>
+        <input type="number" id = 'pants_extendpri' class="pants_extendpri" value="0.00">
     </div>
 
-    <div>
+    <div id="shirt/rows">
         <label class="shirts">Shirts</label>   
         <input type="button" id="shirtsMinusBut" value="-">
         <label id="shirtsQty" class="qty">0</label>
         <input type="button" id="shirtsAddBut" value="+">
     
         $<label class="shirt_price">10.99</label>
-        <label id="shirt_extendpri">0.00</label>    
+        <input type="number" id = 'shirt_extendpri' class="pants_extendpri" value="0.00">
     </div>
 
     <button id="calculatorBut">Calculate</button>
