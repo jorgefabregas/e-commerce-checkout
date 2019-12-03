@@ -28,4 +28,3 @@ addBut.addEventListener ("click", add);
 minus_But.addEventListener ("click", minus_shirt);
 add_But.addEventListener ("click", add_shirt);
 
-
