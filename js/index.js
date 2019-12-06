@@ -28,11 +28,17 @@ addBut.addEventListener ("click", add);
 minus_But.addEventListener ("click", minus_shirt);
 add_But.addEventListener ("click", add_shirt);
 
+var total_items = 2;
 
 function updateExtPants() {
-    var pricePants = getElementById ('pants_price').value;
-    var qtyPants = getElementById ('pantsQty').value;
-    var pricePantsExt = document.getElementById ('pants_extendpri').value;
-    pricePantsExt.innerHTML = parseFloat (pricePants.innerHTML)*(qtyPants.innerHTML);
+		
+    let pantsID = document.getElementById("pantsQty");
+    let extPantsPrice = extPantsPrice + parseInt(pantsID.value) * parseInt(pantsID.getAttribute("data-price"));
+	document.getElementById("pants_extendpri").innerHTML = "$" + extPantsPrice;
 }
+
+
+
+
+
 
