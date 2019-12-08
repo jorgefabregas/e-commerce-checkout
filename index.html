@@ -8,20 +8,27 @@
     <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-    <h1>E-commerce Checkout</h1>
-    
-    <p>Product Quantity Unit Price Extended Price</p>
-    <div id="pants/row">
-        <label class="pants">Pants</label>   
-        <input type="button" id="pantsMinusBut" value="-">
-        <label id="pantsQty" class="pantsQty" data-price=40.99>0</label>
-        <input type="button" id="pantsAddBut" value="+">
+    <!-- <article id="container" class="container">
+        <h1>E-commerce Checkout</h1>
+    <div class="description">
+        <p>Product</p>
+        <p>Quantity</p>
+        <p>Unit Price</p>
+        <p>Extended Price</p>
+    </div>
+    <div id="pants/rows" class="pants rows">
+        <label class="pants">Pants</label> 
+        <div class="qty_calc">
+            <input type="button" id="pantsMinusBut" value="-">
+            <label id="pantsQty" class="pantsQty" data-price=40.99>0</label>
+            <input type="button" id="pantsAddBut" value="+">
+        </div>  
     
         <label id="pants_price">$40.99</label>
         <input type="text" id = 'pants_extendpri' class="pants_extendpri" value="0.00" onchange="updateExtPants()">
     </div>
 
-    <div id="shirt/rows">
+    <div id="shirt/rows" class="shirt rows">
         <label class="shirts">Shirts</label>   
         <input type="button" id="shirtsMinusBut" value="-">
         <label id="shirtsQty" class="qty">0</label>
@@ -40,7 +47,65 @@
             <li id="total">Total:</li>
         </ul>
     </form>
+    </article> -->
 
+    <div class="container" id="container">
+            <h1>E-commerce Checkout</h1>
+        <table class="table" id="table">
+            <thead>
+                <tr>
+                    <th>Product</th><th>Quantity</th><th>Unit Price</th><th>Extended Price</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Pants</td>
+                <td>
+                    <div class="qty_calc">
+                        <input type="button" id="pantsMinusBut" value="-">
+                        <label id="pantsQty" class="pantsQty" data-price=40.99>0</label>
+                        <input type="button" id="pantsAddBut" value="+">
+                    </div>
+                </td>
+                <td>
+                    <label id="pants_price">$40.99</label>
+                </td>
+                <td>
+                    <input type="text" id = 'pants_extendpri' class="pants_extendpri" value="0.00">
+                </td>
+            </tr>
+            <tr>
+                <td>Shirts</td>
+                <td>
+                    <div>
+                        <input type="button" id="shirtsMinusBut" value="-">
+                        <label id="shirtsQty" class="qty">0</label>
+                        <input type="button" id="shirtsAddBut" value="+">
+                    </div> 
+                </td>
+                <td>
+                    <label class="shirt_price">$10.99</label>
+                </td>
+                <td>
+                    <input type="text" id = 'shirt_extendpri' class="pants_extendpri" value="0.00">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <input type="button" id="calcBut" class="calcBut" value="Calculate">
+
+    <table class="table_total" id="table_total">
+        <tr>
+            <td><label id="subtotal" class="subtotal">Subtotal:</label></td>
+        </tr>
+        <tr>
+            <td><label id="tax" class="tax">Tax:</label></td>
+        </tr>
+        <tr>
+            <td><label id="total" class="total">Total:</label></td>
+        </tr>
+    
+        </table>
 
 
 

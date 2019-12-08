@@ -1,13 +1,92 @@
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    
+
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+body {
+    margin: 0;
+    background-color: rgb(236, 213, 182);
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    margin: 150px auto 20px auto;
+    width: 600px;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+}
+.container h1 {
+    text-align: center;
+    padding: 1rem 0;
+}
+.table {
+    background-color: whitesmoke;
+    text-align: center;
+    width: 100%;
+    border-radius: 1rem;
+}
+.th, td {
+    padding: 10px;
 }
 
-.pants {
-    margin-right: 1em;
+.pants_extendpri {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    border: none;
+    width: 100px;
 }
-.pants_price {
-    margin-right: 1em;
+.calcBut {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    padding: 0;
+    margin: auto;
+    border-radius: 25px;
+    background-color: yellowgreen;
+    color: black;
+    box-shadow: 0px 3px 8px 0.2px black;
+}
+.table_total {
+    margin: 0 0 0 160px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.table_total td{
+    padding: 0.2rem 0;
+}
+/* .container {
+    background-color: rgb(236, 213, 182);
+    display: inline-block;
+    width: auto;
+    margin: 2rem 30%;
+}
+.container h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.description {
+    display: flex;
+    justify-content: space-between;
+}
+.description p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.rows {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    margin: 0.5rem 0;
+}
+.pants {
+    margin: 0 2rem 0 0.2rem;
+}
+.qty_calc {
+    margin-right: 1.6rem;
+}
+.pants_extendpri {
+    width: 60px;
+    border: none;
+
 }
 .shirts {
     margin-right: 1em;
@@ -17,5 +96,5 @@ h1 {
 }
 .list {
     list-style: none;
-    padding: 0;
-}
+    padding: 0; 
+} */
