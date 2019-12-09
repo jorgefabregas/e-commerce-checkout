@@ -72,6 +72,10 @@ body {
     text-align: center;
     padding: 3px;
 }
+.promoText {
+    display: none;
+}
+
 /* .container {
     background-color: rgb(236, 213, 182);
     display: inline-block;
