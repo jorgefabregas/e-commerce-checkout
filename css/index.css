@@ -24,7 +24,6 @@ body {
 .th, td {
     padding: 10px;
 }
-
 .pants_extendpri {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
@@ -40,23 +39,11 @@ body {
     height: 40px;
     text-align: center;
     padding: 0;
-    margin: 30px 0 0 610px;
+    margin: 30px auto;
     border-radius: 25px;
     background-color: yellowgreen;
     color: black;
     box-shadow: 0px 3px 8px 0.2px black;
-}
-.calcuContainer ul {
-    margin: 0 0 0 160px;
-    padding: 10px;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    width: 200px;
-    font-family: 'Roboto', sans-serif;
-    list-style: none;
-}
-.calcuContainer li {
-    padding: 3px 0;
 }
 .coupContainer {
     text-align: center;
@@ -72,10 +59,31 @@ body {
     text-align: center;
     padding: 3px;
 }
-.promoText {
-    display: none;
+.promobox {
+    background-color: whitesmoke;
+    width: 300px;
+    max-width: 500px;
+    height: 100px;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
-
+.promobox h2{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.textPromo {
+    width: 200px;
+    height: 20px;
+    justify-self: center;
+    margin: 0 0 10px 50px;
+}
+.promoButton {
+    width: 100px;
+    margin: 0 0 10px 100px;
+}
 /* .container {
     background-color: rgb(236, 213, 182);
     display: inline-block;

@@ -70,7 +70,7 @@
                     <label id="pants_price"></label>
                 </td>
                 <td>
-                    <input type="text" id = 'pants_extendpri' class="pants_extendpri" value="">
+                    <label id = 'pants_extendpri' class="pants_extendpri"></label>
                 </td>
             </tr>
             <tr>
@@ -78,36 +78,40 @@
                 <td>
                     <div>
                         <input type="button" id="shirtsMinusBut" value="-">
-                        <label id="shirtsQty" class="qty">0</label>
+                        <label id="shirtsQty" class="qty"></label>
                         <input type="button" id="shirtsAddBut" value="+">
                     </div> 
                 </td>
                 <td>
-                    <label id="shirt_price" class="shirt_price">$10.99</label>
+                    <label id="shirt_price" class="shirt_price"></label>
                 </td>
                 <td>
-                    <input type="text" id = 'shirt_extendpri' class="pants_extendpri" value="">
+                    <label id = 'shirt_extendpri' class="pants_extendpri"></label>
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <label id="subtotal" class="subtotal">Subtotal: </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label id="tax" class="tax">Tax: </label>
+                </td>
+            </tr>
+            <td>
+                <label id="total" class="total">Total: </label>
+            </td>
         </table>
     </div>
 
     <input type="button" id="calcBut" class="calcBut" value="Calculate">
 
-    <div id="calcuContainer" class="calcuContainer">
-        <ul>
-            <li id="subtotal" class="subtotal">Subtotal:</li>
-            <li id="tax" class="tax">Tax:</li>
-            <li id="total" class="total">Total:</li>
-        </ul>
-    </div>
-    <div id="coupContainer" class="coupContainer">
-        <p>Have a promo code?</p>
-        <input type="button" id="promoButton" class="promoButton" value= "Click to Enter">
-        <input type="text" name="promoText" id="promoText" class="promoText">
-    </div>
-
-
+    <div class="promobox" id="promobox">
+            <h2>Have a promo code?</h2>
+            <input type="text" id="textPromo" class="textPromo">
+            <input type="button" id="promoButton" class="promoButton" value= "Click to Enter">
+        </div>    
 
 
     <script src="/js/index.js"></script>
