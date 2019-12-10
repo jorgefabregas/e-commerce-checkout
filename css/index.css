@@ -6,7 +6,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 .container {
-    margin: 130px auto 20px auto;
+    margin: 100px auto 20px auto;
     width: 600px;
     background-color: whitesmoke;
     border-radius: 1rem;
@@ -45,20 +45,6 @@ body {
     color: black;
     box-shadow: 0px 3px 8px 0.2px black;
 }
-.coupContainer {
-    text-align: center;
-    margin: 30px auto;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-.coupContainer p {
-    margin: 0;
-}
-.coupon {
-    font-size: 1rem;
-    text-align: center;
-    padding: 3px;
-}
 .promobox {
     background-color: whitesmoke;
     width: 300px;
@@ -84,47 +70,3 @@ body {
     width: 100px;
     margin: 0 0 10px 100px;
 }
-/* .container {
-    background-color: rgb(236, 213, 182);
-    display: inline-block;
-    width: auto;
-    margin: 2rem 30%;
-}
-.container h1 {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-}
-.description {
-    display: flex;
-    justify-content: space-between;
-}
-.description p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-}
-.rows {
-    display: flex;
-    font-family: 'Roboto', sans-serif;
-    margin: 0.5rem 0;
-}
-.pants {
-    margin: 0 2rem 0 0.2rem;
-}
-.qty_calc {
-    margin-right: 1.6rem;
-}
-.pants_extendpri {
-    width: 60px;
-    border: none;
-
-}
-.shirts {
-    margin-right: 1em;
-}
-.shirt_price {
-    margin-right: 1em;
-}
-.list {
-    list-style: none;
-    padding: 0; 
-} */

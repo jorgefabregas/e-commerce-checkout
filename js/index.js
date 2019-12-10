@@ -109,47 +109,16 @@ if (valiCoup !== "NOTAX" || "FIFTYFIFTY") {
 function validcode (cupon) {
     let firstCode = "NOTAX";
     let secondCode = "FIFTYFIFTY";
-    let validIn = document.getElementById ('promoText').value; 
+    let validIn = document.getElementById ('textPromo').value; 
     
     if (validIn.toUpperCase() == firstCode.toUpperCase()){
         return firstCode;}
     if (validIn.toUpperCase() == secondCode.toUpperCase()){
         return secondCode;}
     else {
-        document.getElementById ('promoText').innerHTML = "Please, Enter a Valid Code";
+        document.getElementById ('textPromo').innerHTML = "Please, Enter a Valid Code";
         return false;}
 }
 
 promoButton.addEventListener ("click", validcode);
-
-/* function minus () {
-    let label = document.getElementById ("pantsQty");
-    label.innerHTML = parseInt (label.innerHTML) -1;
-}
-
-function minus_shirt () {
-    let label = document.getElementById ("shirtsQty");
-    label.innerHTML = parseInt (label.innerHTML) -1;
-}
-
-function add () {
-    let label = document.getElementById ("pantsQty");
-    label.innerHTML = parseInt (label.innerHTML) +1;
-}
-
-function add_shirt () {
-    let label = document.getElementById ("shirtsQty");
-    label.innerHTML = parseInt (label.innerHTML) +1;
-}
-
-minusBut.addEventListener ("click", minus);
-addBut.addEventListener ("click", add);
-minus_But.addEventListener ("click", minus_shirt);
-add_But.addEventListener ("click", add_shirt); */
-
-
-
-
-
-
 

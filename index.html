@@ -1,119 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>E-Commerce Assignment</title>
-    <link rel="stylesheet" href="/css/index.css">
-</head>
-<body>
-    <!-- <article id="container" class="container">
-        <h1>E-commerce Checkout</h1>
-    <div class="description">
-        <p>Product</p>
-        <p>Quantity</p>
-        <p>Unit Price</p>
-        <p>Extended Price</p>
-    </div>
-    <div id="pants/rows" class="pants rows">
-        <label class="pants">Pants</label> 
-        <div class="qty_calc">
-            <input type="button" id="pantsMinusBut" value="-">
-            <label id="pantsQty" class="pantsQty" data-price=40.99>0</label>
-            <input type="button" id="pantsAddBut" value="+">
-        </div>  
-    
-        <label id="pants_price">$40.99</label>
-        <input type="text" id = 'pants_extendpri' class="pants_extendpri" value="0.00" onchange="updateExtPants()">
-    </div>
-
-    <div id="shirt/rows" class="shirt rows">
-        <label class="shirts">Shirts</label>   
-        <input type="button" id="shirtsMinusBut" value="-">
-        <label id="shirtsQty" class="qty">0</label>
-        <input type="button" id="shirtsAddBut" value="+">
-    
-        $<label class="shirt_price">10.99</label>
-        <input type="number" id = 'shirt_extendpri' class="pants_extendpri" value="0.00">
-    </div>
-
-    <button id="calculatorBut">Calculate</button>
-
-    <form>
-        <ul class="list">
-            <li id="subtotal">Subtotal:</li>
-            <li id="tax">Tax:</li>
-            <li id="total">Total:</li>
-        </ul>
-    </form>
-    </article> -->
-
-    <div class="container" id="container">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>E-Commerce Assignment</title>
+        <link rel="stylesheet" href="/css/index.css">
+    </head>
+    <body>
+        <div class="container" id="container">
             <h1>E-commerce Checkout</h1>
-        <table class="table" id="table">
-            <thead>
+            <table class="table" id="table">
+                <thead>
+                    <tr>
+                        <th>Product</th><th>Quantity</th><th>Unit Price</th><th>Extended Price</th>
+                    </tr>
+                </thead>
                 <tr>
-                    <th>Product</th><th>Quantity</th><th>Unit Price</th><th>Extended Price</th>
+                    <td>Pants</td>
+                    <td>
+                        <div class="qty_calc">
+                            <input type="button" id="pantsMinusBut" value="-">
+                            <label id="pantsQty" class="pantsQty"></label>
+                            <input type="button" id="pantsAddBut" value="+">
+                        </div>
+                    </td>
+                    <td>
+                        <label id="pants_price"></label>
+                    </td>
+                    <td>
+                        <label id = 'pants_extendpri' class="pants_extendpri"></label>
+                    </td>
                 </tr>
-            </thead>
-            <tr>
-                <td>Pants</td>
+                <tr>
+                    <td>Shirts</td>
+                    <td>
+                        <div>
+                            <input type="button" id="shirtsMinusBut" value="-">
+                            <label id="shirtsQty" class="qty"></label>
+                            <input type="button" id="shirtsAddBut" value="+">
+                        </div> 
+                    </td>
+                    <td>
+                        <label id="shirt_price" class="shirt_price"></label>
+                    </td>
+                    <td>
+                        <label id = 'shirt_extendpri' class="pants_extendpri"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="subtotal" class="subtotal">Subtotal: </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="tax" class="tax">Tax: </label>
+                    </td>
+                </tr>
                 <td>
-                    <div class="qty_calc">
-                        <input type="button" id="pantsMinusBut" value="-">
-                        <label id="pantsQty" class="pantsQty"></label>
-                        <input type="button" id="pantsAddBut" value="+">
-                    </div>
+                    <label id="total" class="total">Total: </label>
                 </td>
-                <td>
-                    <label id="pants_price"></label>
-                </td>
-                <td>
-                    <label id = 'pants_extendpri' class="pants_extendpri"></label>
-                </td>
-            </tr>
-            <tr>
-                <td>Shirts</td>
-                <td>
-                    <div>
-                        <input type="button" id="shirtsMinusBut" value="-">
-                        <label id="shirtsQty" class="qty"></label>
-                        <input type="button" id="shirtsAddBut" value="+">
-                    </div> 
-                </td>
-                <td>
-                    <label id="shirt_price" class="shirt_price"></label>
-                </td>
-                <td>
-                    <label id = 'shirt_extendpri' class="pants_extendpri"></label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label id="subtotal" class="subtotal">Subtotal: </label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label id="tax" class="tax">Tax: </label>
-                </td>
-            </tr>
-            <td>
-                <label id="total" class="total">Total: </label>
-            </td>
-        </table>
-    </div>
+            </table>
+        </div>
 
-    <input type="button" id="calcBut" class="calcBut" value="Calculate">
+        <input type="button" id="calcBut" class="calcBut" value="Calculate">
 
-    <div class="promobox" id="promobox">
-            <h2>Have a promo code?</h2>
-            <input type="text" id="textPromo" class="textPromo">
-            <input type="button" id="promoButton" class="promoButton" value= "Click to Enter">
+        <div class="promobox" id="promobox">
+                <h2>Have a promo code?</h2>
+                <input type="text" id="textPromo" class="textPromo">
+                <input type="button" id="promoButton" class="promoButton" value= "Click to Enter">
         </div>    
 
 
-    <script src="/js/index.js"></script>
-</body>
+        <script src="/js/index.js"></script>
+    </body>
 </html>
